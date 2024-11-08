@@ -1,0 +1,17 @@
+{
+  "name": "note_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"npm run dev --prefix frontend/notes_app\" \"nodemon backend/index.js\"",
+  "start-backend": "nodemon backend/index.js",
+  "build": "concurrently \"npm run dev --prefix frontend/notes_app\" \"nodemon backend/index.js\""
+},
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7"
+  }
+}
