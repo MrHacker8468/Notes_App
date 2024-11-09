@@ -5,7 +5,7 @@
   "scripts": {
   "dev": "concurrently \"npm run dev --prefix frontend/notes_app\" \"nodemon backend/index.js\"",
   "start-backend": "nodemon backend/index.js",
-  "build": "concurrently \"npm run dev --prefix frontend/notes_app\" \"nodemon backend/index.js\""
+  "build": "npm run build --prefix frontend/notes_app"
 },
   "author": "",
   "license": "ISC",
